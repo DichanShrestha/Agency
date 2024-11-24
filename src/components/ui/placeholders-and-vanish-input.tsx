@@ -4,6 +4,13 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 
+type Particle = {
+  x: number;
+  y: number;
+  r: number;
+  color: string; // `rgba(r, g, b, a)` format
+};
+
 export function PlaceholdersAndVanishInput({
   placeholders,
   onChange,
@@ -43,7 +50,7 @@ export function PlaceholdersAndVanishInput({
   }, [placeholders]);
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const newDataRef = useRef<any[]>([]);
+  const newDataRef = useRef<Particle[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
   const [value, setValue] = useState("");
   const [animating, setAnimating] = useState(false);
@@ -67,7 +74,7 @@ export function PlaceholdersAndVanishInput({
 
     const imageData = ctx.getImageData(0, 0, 800, 800);
     const pixelData = imageData.data;
-    const newData: any[] = [];
+    const newData: Particle[] = [];
 
     for (let t = 0; t < 800; t++) {
       let i = 4 * t * 800;
@@ -81,12 +88,10 @@ export function PlaceholdersAndVanishInput({
           newData.push({
             x: n,
             y: t,
-            color: [
-              pixelData[e],
-              pixelData[e + 1],
-              pixelData[e + 2],
-              pixelData[e + 3],
-            ],
+            r: 1,
+            color: `rgba(${pixelData[e]}, ${pixelData[e + 1]}, ${
+              pixelData[e + 2]
+            }, ${pixelData[e + 3] / 255})`, // RGBA format as a string
           });
         }
       }

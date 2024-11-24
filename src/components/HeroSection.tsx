@@ -1,6 +1,5 @@
 import GradualSpacing from "@/components/magicui/gradual-spacing";
 import HeroVideoDialog from "@/components/magicui/hero-video-dialog";
-import BlurIn from "@/components/ui/blur-in";
 import BoxReveal from "./ui/box-reveal";
 import { Button } from "./ui/button";
 
@@ -28,44 +27,34 @@ export default function HeroSection() {
           <div className="max-w-lg items-center justify-center overflow-hidden pt-8">
             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
               <p className="text-[3.5rem] font-semibold">
-                Magic UI<span className="text-[#5046e6]">.</span>
+                Webify<span className="text-[#5046e6]">.</span>
               </p>
             </BoxReveal>
 
             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
               <h2 className="mt-[.5rem] text-[1rem]">
-                UI library for{" "}
-                <span className="text-[#5046e6]">Design Engineers</span>
+                We plan, We build{" "}
+                <span className="text-[#5046e6]">You relax</span>
               </h2>
             </BoxReveal>
 
             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
               <div className="mt-6">
                 <p>
-                  -&gt; 20+ free and open-source animated components built with
-                  <span className="font-semibold text-[#5046e6]"> React</span>,
+                  -&gt; Quick
                   <span className="font-semibold text-[#5046e6]">
                     {" "}
-                    Typescript
+                    Turnaround
                   </span>
-                  ,
-                  <span className="font-semibold text-[#5046e6]">
-                    {" "}
-                    Tailwind CSS
-                  </span>
-                  , and{" "}
-                  <span className="font-semibold text-[#5046e6]">
-                    {" "}
-                    Framer Motion
-                  </span>
-                  . <br />
-                  -&gt; 100% open-source, and customizable. <br />
+                  , on Custom Projects
+                  <br />
+                  -&gt; Fully Customizable and Scalable Solutions <br />
                 </p>
               </div>
             </BoxReveal>
 
             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-              <Button className="mt-[1.6rem] bg-[#5046e6]">Explore</Button>
+              <Button className="mt-[1.6rem] bg-[#5046e6]">Call to Action</Button>
             </BoxReveal>
           </div>
         </div>
