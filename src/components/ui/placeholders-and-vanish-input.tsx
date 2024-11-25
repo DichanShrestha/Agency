@@ -118,10 +118,13 @@ export function PlaceholdersAndVanishInput({
           if (current.x < pos) {
             newArr.push(current);
           } else {
-            if (current.r <= 0) {
-              current.r = 0;
-              continue;
+            if (current.r > 0) {
+              current.x += Math.random() > 0.5 ? 1 : -1;
+              current.y += Math.random() > 0.5 ? 1 : -1;
+              current.r -= 0.05 * Math.random();
+              newArr.push(current);
             }
+
             current.x += Math.random() > 0.5 ? 1 : -1;
             current.y += Math.random() > 0.5 ? 1 : -1;
             current.r -= 0.05 * Math.random();
@@ -250,7 +253,7 @@ export function PlaceholdersAndVanishInput({
 
       <div className="absolute inset-0 flex items-center rounded-full pointer-events-none">
         <AnimatePresence mode="wait">
-          {!value && (
+          {!value ? (
             <motion.p
               initial={{
                 y: 5,
@@ -273,7 +276,7 @@ export function PlaceholdersAndVanishInput({
             >
               {placeholders[currentPlaceholder]}
             </motion.p>
-          )}
+          ) : null}
         </AnimatePresence>
       </div>
     </form>
