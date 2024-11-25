@@ -101,7 +101,7 @@ export function PlaceholdersAndVanishInput({
       x,
       y,
       r: 1,
-      color: `rgba(${color[0]}, ${color[1]}, ${color[2]}, ${color[3]})`,
+      color,
     }));
   }, [value]);
 
