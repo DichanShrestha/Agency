@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
-import { FaBlog, FaPersonArrowUpFromLine, FaQuestion } from "react-icons/fa6";
+import { FaPersonArrowUpFromLine, FaQuestion } from "react-icons/fa6";
 import { IconHome } from "@tabler/icons-react";
 import { IoMdContact } from "react-icons/io";
 import { MdMiscellaneousServices } from "react-icons/md";

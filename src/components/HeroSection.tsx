@@ -171,7 +171,7 @@ export default function HeroSection() {
       </div>
 
       <div className="mt-7">
-        <VelocityScroll text="Webify" default_velocity={5} className="lg:text-4xl text-[#5046e6] font-bold mt-5" />
+        <VelocityScroll text="Webify" default_velocity={5} className="lg:text-[50px] md:text-4xl text-2xl text-[#5046e6] font-bold mt-5" />
       </div>
     </div>
   );
