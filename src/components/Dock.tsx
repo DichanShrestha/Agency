@@ -38,13 +38,13 @@ export default function Dock() {
       ),
       href: "#",
     },
-    {
-      title: "Blog",
-      icon: (
-        <FaBlog className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
+    // {
+    //   title: "Blog",
+    //   icon: (
+    //     <FaBlog className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    //   ),
+    //   href: "#",
+    // },
 
     {
       title: "Career",
@@ -64,7 +64,6 @@ export default function Dock() {
   return (
     <div className="flex items-center justify-center h-[35rem] w-full">
       <FloatingDock
-        mobileClassName="translate-y-20" // only for demo, remove for production
         items={links}
       />
     </div>

@@ -35,14 +35,14 @@ const Navbar = () => {
     console.log("submitted");
   };
   return (
-    <div className="flex justify-between items-center p-2">
+    <div className="flex justify-between items-center p-2 lg:mx-10">
       <div>Logo</div>
       <div className="flex items-center">
-        <PlaceholdersAndVanishInput
+        {/* <PlaceholdersAndVanishInput
           placeholders={placeholders}
           onChange={handleChange}
           onSubmit={onSubmit}
-        />
+        /> */}
         <Link href="/">
           <div className="p-2 hover:bg-neutral-300 dark:hover:bg-neutral-800 rounded-full ml-2 transition duration-300 ease-in-out">
             <FaXTwitter size={20} />
@@ -73,7 +73,7 @@ const Navbar = () => {
               )}
             </Button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="w-40">
+          <DropdownMenuContent className="w-40 bg-neutral-900 border-[1px] rounded-lg">
             <DropdownMenuLabel>Select Theme</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuRadioGroup
