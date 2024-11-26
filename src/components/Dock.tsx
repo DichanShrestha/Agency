@@ -62,7 +62,7 @@ export default function Dock() {
     },
   ];
   return (
-    <div className="flex items-center justify-center h-[35rem] w-full">
+    <div className="flex items-center justify-center h-[35rem] w-full z-[100]">
       <FloatingDock
         items={links}
       />
