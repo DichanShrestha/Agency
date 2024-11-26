@@ -18,21 +18,6 @@ import { Button } from "./ui/button";
 const Navbar = () => {
   const { resolvedTheme, setTheme } = useTheme();
   const [position, setPosition] = useState<string>("dark");
-  const placeholders = [
-    "What's the first rule of Fight Club?",
-    "Who is Tyler Durden?",
-    "Where is Andrew Laeddis Hiding?",
-    "Write a Javascript method to reverse a string",
-    "How to assemble your own PC?",
-  ];
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(e.target.value);
-  };
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("submitted");
-  };
   return (
     <div className="flex justify-between items-center p-2 lg:mx-10">
       <div>Logo</div>
