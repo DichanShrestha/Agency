@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import { PlaceholdersAndVanishInput } from "./ui/placeholders-and-vanish-input";
 import { FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { useTheme } from "next-themes";
 import { RxMoon, RxSun } from "react-icons/rx";
@@ -73,7 +72,7 @@ const Navbar = () => {
               )}
             </Button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="w-40 bg-neutral-900 border-[1px] rounded-lg">
+          <DropdownMenuContent className="w-40 cursor-pointer dark:bg-neutral-900 border-[1px] rounded-lg bg-white">
             <DropdownMenuLabel>Select Theme</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuRadioGroup
@@ -83,18 +82,21 @@ const Navbar = () => {
               <DropdownMenuRadioItem
                 onClick={() => setTheme("light")}
                 value="light"
+                className="cursor-pointer"
               >
                 Light
               </DropdownMenuRadioItem>
               <DropdownMenuRadioItem
                 onClick={() => setTheme("dark")}
                 value="dark"
+                className="cursor-pointer"
               >
                 Dark
               </DropdownMenuRadioItem>
               <DropdownMenuRadioItem
                 onClick={() => setTheme("system")}
                 value="system"
+                className="cursor-pointer"
               >
                 System
               </DropdownMenuRadioItem>
