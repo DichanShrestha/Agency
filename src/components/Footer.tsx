@@ -1,32 +1,42 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 
 export default function Footer() {
   return (
-        <footer className="-10  px-6 md:px-0 md:mx-auto border-t">
-        <div className="flex flex-col  justify-between gap-y-3 xl:w-4/5 2xl:w-[68%] mx-auto">
-          <h1 className="text-3xl md:text-5xl font-medium ">
-            <Image
-              src={"/logo/logo.webp"}
-              width={10000}
-              height={10000}
-              className="w-40"
-              alt="image"
-            />{" "}
-          </h1>
-          <p className="text-left  text-xl  text-gray-500">519-200-5000</p>
-          <p className="text-left  text-xl  text-gray-500">
-            admin@birdsoftware.ca
-          </p>
+    <footer className="bg-background text-white py-8">
+    <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div>
+        <h3 className="font-bold text-lg mb-2">About Us</h3>
+        <p className="text-sm text-gray-400">We are committed to providing the best services to our customers.</p>
+      </div>
+      <div>
+        <h3 className="font-bold text-lg mb-2">Quick Links</h3>
+        <ul>
+          <li><a href="#" className="text-gray-400 hover:text-white">Home</a></li>
+          <li><a href="#" className="text-gray-400 hover:text-white">About</a></li>
+          <li><a href="#" className="text-gray-400 hover:text-white">Services</a></li>
+          <li><a href="#" className="text-gray-400 hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 className="font-bold text-lg mb-2">Follow Us</h3>
+        <div className="flex space-x-4">
+          <a href="#" className="text-gray-400 hover:text-white">Facebook</a>
+          <a href="#" className="text-gray-400 hover:text-white">Twitter</a>
+          <a href="#" className="text-gray-400 hover:text-white">Instagram</a>
         </div>
-
-        <div className="flex md:justify-center gap-x-4 mt-10">
-          © 2025 Bird. All Rights Reserved.
-          <Link href="/" className="text-blue-500">
-            Privacy Policy
-          </Link>
-        </div>
-      </footer>
+      </div>
+      <div>
+        <h3 className="font-bold text-lg mb-2">Newsletter</h3>
+        <form>
+          <input type="email" placeholder="Your email" className="w-full p-2 rounded" />
+          <button className="bg-blue-500 text-white px-4 py-2 rounded mt-2">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div className="text-center text-sm text-gray-400 mt-8">
+      © 2024 YourCompanyName. All Rights Reserved.
+    </div>
+  </footer>
+  
   )
 }

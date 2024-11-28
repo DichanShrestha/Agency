@@ -103,7 +103,7 @@ export default function Process() {
                 toRef={div7Ref}
               />
             </div>
-            <div className="lg:ml-10">
+            <div className="lg:ml-10 md:ml-0 ml-[42px]">
               <BoxReveal boxColor={"#5046e6"} duration={0.5}>
                 <h1 className="font-bold text-[24px]">1. Connect</h1>
               </BoxReveal>

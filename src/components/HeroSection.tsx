@@ -13,6 +13,7 @@ import hosting from "../../public/services/web-hosting-svgrepo-com.svg";
 import design from "../../public/services/figma-svgrepo-com.svg";
 import docs from "../../public/services/documentation-svgrepo-com.svg";
 import { VelocityScroll } from "./ui/scroll-based-velocity";
+import Services from "./Services";
 
 export default function HeroSection() {
   const [isLessThanMd, setIsLessThanMd] = useState<boolean>(false);
@@ -158,17 +159,9 @@ export default function HeroSection() {
         <p className="text-xl text-center mb-6">All of our services are designed to help your business stand out</p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-14 md:mx-10 mx-3">
-        {services.map((service, idx) => (
-          <div key={idx} className="flex justify-center">
-            <Card
-              image={service.image}
-              title={service.text}
-              description={service.description}
-            />
-          </div>
-        ))}
-      </div>
+      <section>
+        <Services />
+      </section>
 
       <div className="my-28">
         <VelocityScroll text="Webify" default_velocity={5} className="lg:text-[50px] md:text-4xl text-2xl text-[#5046e6] font-bold mt-5" />

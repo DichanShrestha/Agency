@@ -14,7 +14,7 @@ export default function Dock() {
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/",
     },
 
     {
@@ -29,7 +29,7 @@ export default function Dock() {
       icon: (
         <MdMiscellaneousServices className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/services",
     },
     {
       title: "Testimonials",
@@ -38,14 +38,6 @@ export default function Dock() {
       ),
       href: "#",
     },
-    // {
-    //   title: "Blog",
-    //   icon: (
-    //     <FaBlog className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    //   ),
-    //   href: "#",
-    // },
-
     {
       title: "Career",
       icon: (
@@ -58,7 +50,7 @@ export default function Dock() {
       icon: (
         <IoMdContact className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "contact-us",
     },
   ];
   return (
