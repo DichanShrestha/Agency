@@ -5,53 +5,12 @@ import BoxReveal from "./ui/box-reveal";
 import { Button } from "./ui/button";
 import { useEffect, useState } from "react";
 import TextReveal from "@/components/ui/text-reveal";
-import Card from "./Card";
-import webDevelopment from "../../public/services/web-development-svgrepo-com.svg";
-import seo from "../../public/services/seo-mobile-setting-gear-cog-07-svgrepo-com.svg";
-import debugging from "../../public/services/debug-script-svgrepo-com.svg";
-import hosting from "../../public/services/web-hosting-svgrepo-com.svg";
-import design from "../../public/services/figma-svgrepo-com.svg";
-import docs from "../../public/services/documentation-svgrepo-com.svg";
 import { VelocityScroll } from "./ui/scroll-based-velocity";
 import Services from "./Services";
 
 export default function HeroSection() {
   const [isLessThanMd, setIsLessThanMd] = useState<boolean>(false);
 
-  const services = [
-    {
-      image: webDevelopment,
-      text: "Web Development",
-      description:
-        "Take your business to next level with our web development services",
-    },
-    {
-      image: design,
-      text: "Web Design",
-      description:
-        "Take your business to next level with our web designing services",
-    },
-    {
-      image: seo,
-      text: "Search Engine Optimization",
-      description: "Make your website top of the list with our seo services",
-    },
-    {
-      image: hosting,
-      text: "Web Hosting",
-      description: "Host your website with webify",
-    },
-    {
-      image: debugging,
-      text: "Debug and Update",
-      description: "Debug or update your website with webify",
-    },
-    {
-      image: docs,
-      text: "Documentation",
-      description: "Document your work with us",
-    },
-  ];
 
   useEffect(() => {
     // Function to check the screen size

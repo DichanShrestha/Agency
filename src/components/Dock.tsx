@@ -22,7 +22,7 @@ export default function Dock() {
       icon: (
         <FaQuestion className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/about",
     },
     {
       title: "Services",
@@ -54,7 +54,7 @@ export default function Dock() {
     },
   ];
   return (
-    <div className="flex items-center justify-center h-[35rem] w-full z-[100]">
+    <div className="flex items-center justify-center h-auto w-full z-[100]">
       <FloatingDock
         items={links}
       />
