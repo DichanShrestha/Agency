@@ -61,7 +61,7 @@ export default function page() {
           </p>
           <ul className="list-disc pl-5">
             <li className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-2">
-              Created the "True Feedback" project to gather anonymous feedback.
+            Created the &quot;True Feedback&quot; project to gather anonymous feedback.
             </li>
             <li className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-2">
               Learned server-side rendering (SSR) and static site generation
