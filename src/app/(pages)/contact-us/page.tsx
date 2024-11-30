@@ -110,8 +110,9 @@ export default function ContactUs() {
           <div className="flex gap-3 mt-3">
             <Checkbox />
             <Label>
-              I'd like to receive more information about company. I understand
-              and agree to <Link href="/private-policy">Private Policy</Link>
+              I&apos;d like to receive more information about company. I
+              understand and agree to{" "}
+              <Link href="/private-policy">Private Policy</Link>
             </Label>
           </div>
         </form>

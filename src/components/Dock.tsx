@@ -36,14 +36,14 @@ export default function Dock() {
       icon: (
         <VscFeedback className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/testimonials",
     },
     {
       title: "Career",
       icon: (
         <FaPersonArrowUpFromLine className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/career",
     },
     {
       title: "Contact",
